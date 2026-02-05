@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>Speed Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <button id="themeBtn">🌙</button>
+  <button id="langBtn">EN</button>
+</div>
+
+<div class="container">
+  <h1 id="title">インターネット速度テスト</h1>
+
+  <div class="speed-box">
+    <div class="label" id="dLabel">ダウンロード</div>
+    <div id="down" class="speed">0</div>
+    <div class="unit">Mbps</div>
+  </div>
+
+  <div class="speed-box">
+    <div class="label" id="uLabel">アップロード</div>
+    <div id="up" class="speed">0</div>
+    <div class="unit">Mbps</div>
+  </div>
+
+  <div class="speed-box">
+    <div class="label" id="pLabel">Ping</div>
+    <div id="ping" class="speed">0</div>
+    <div class="unit">ms</div>
+  </div>
+
+  <button id="start">START</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
