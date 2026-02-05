@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="topbar">
   <button id="themeBtn">🌙</button>
   <button id="langBtn">EN</button>
@@ -14,6 +15,16 @@
 
 <div class="container">
   <h1 id="title">インターネット速度テスト</h1>
+
+  <div id="status">Ready</div>
+
+  <div class="ring">
+    <svg width="160" height="160">
+      <circle cx="80" cy="80" r="70" />
+      <circle cx="80" cy="80" r="70" id="progress" />
+    </svg>
+    <div class="ring-text" id="phase">IDLE</div>
+  </div>
 
   <div class="speed-box">
     <div class="label" id="dLabel">ダウンロード</div>
