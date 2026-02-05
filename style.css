@@ -21,7 +21,7 @@ body {
   color: var(--text);
   display: flex;
   justify-content: center;
-  align-items: center;
+  alignations: center;
   height: 100vh;
 }
 
@@ -46,6 +46,43 @@ body {
   width: 300px;
 }
 
+#status {
+  margin-bottom: 10px;
+  color: var(--sub);
+}
+
+.ring {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+.ring svg {
+  transform: rotate(-90deg);
+}
+
+.ring circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: var(--sub);
+}
+
+#progress {
+  stroke: var(--btn);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: stroke-dashoffset 0.3s linear;
+}
+
+.ring-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
 .speed-box {
   background: var(--card);
   border-radius: 10px;
@@ -66,4 +103,5 @@ button#start {
   background: var(--btn);
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
